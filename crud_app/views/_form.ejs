@@ -1,0 +1,42 @@
+
+<form action="/api/users" method="POST" id="add_user">
+    <div class="new-user">
+        <div class="form-group">
+            <label for="name" class="text-light">Name</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="name" placeholder="Revanth" style="width: 100%; padding: .6em 1em; margin:.5em 0; border: 1px solid var(--border); font-family: 'Barlow', sans-serif; font-size: 1em; border-radius: .2em;">
+        </div>
+        <div class="form-group">
+            <label for="email" class="text-light">Email</label>
+            <input type="email" name="email" placeholder="Revanth@gmail.com" style="width: 100%; padding: .6em 1em; margin:.5em 0; border: 1px solid var(--border); font-family: 'Barlow', sans-serif; font-size: 1em; border-radius: .2em;">
+        </div>
+        <div class="form-group">
+            <label for="gender" class="text-light">Gender</label>
+            <div class="radio inline">
+                <input type="radio" id="radio-2" name="gender" value="Male">
+                <label for="radio-2" class="radio-label">Male</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-3" name="gender" value="Female">
+                <label for="radio-3" class="radio-label">Female</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="status" class="text-light">Status</label>
+            <div class="radio inline">
+                <input type="radio" id="radio-4" name="status" value="Active">
+                <label for="radio-4" class="radio-label">Active</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-5" name="status" value="Inactive">
+                <label for="radio-5" class="radio-label">Inactive</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update" style="width: 100%; padding: .9em 1em; background-color: #16db93; border: none; font-family: 'PT Sans', sans-serif; font-size: 1em; cursor: pointer; border-radius:2em; margin: .5em 0;">Save</button>
+        </div>
+    </div>
+</form>
+<script src="add-user.js"></script>
